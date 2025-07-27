@@ -1,3 +1,6 @@
+
 class Solution:
-	def sum_of_ap(self, n, a, d):
-		return int((n/2)*(2*a + (n-1)*d))
+    def nthTermOfAP(self, a1 : int, a2 : int, n : int) -> int:
+        diff = a2 - a1
+        result = (a1-diff) + (n*diff)
+        return result
